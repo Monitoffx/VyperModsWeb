@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyper Mods | Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="products-page">
+    <div id="loader-container" class="loader-hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <header>
+        <nav class="glass-nav">
+            <div class="logo">
+                <img src="https://vypermods.mysellauth.com/storage/images/781477.webp" alt="Vyper Mods">
+                <span>Vyper Mods</span>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links pill">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="cart-pill">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="user-dropdown">
+                    <button class="user-btn">
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" onclick="showProfile()"><i class="fa-solid fa-user"></i> Mi Perfil</a>
+                        <a href="#" onclick="showOrders()"><i class="fa-solid fa-box"></i> Mis Pedidos</a>
+                        <a href="#" onclick="showFavorites()"><i class="fa-solid fa-heart"></i> Favoritos</a>
+                        <a href="#" onclick="toggleTheme()" id="themeToggle"><i class="fa-solid fa-sun"></i> Modo Claro</a>
+                        <a href="#" onclick="showSettings()"><i class="fa-solid fa-cog"></i> Configuración</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <aside class="filters-sidebar">
+            <div class="filter-group">
+                <h3>Categories</h3>
+                <select id="category-select">
+                    <option value="all">All Categories</option>
+                    <option value="freefire">FreeFire</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <h3>Keyword</h3>
+                <input type="text" placeholder="Search..." id="search-input">
+            </div>
+
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <div class="price-inputs">
+                    <input type="number" placeholder="Min" id="min-price">
+                    <span>$</span>
+                    <input type="number" placeholder="Max" id="max-price">
+                    <span>$</span>
+                </div>
+            </div>
+
+            <button class="btn-apply" onclick="applyFilters()">Apply <i class="fa-solid fa-arrow-right"></i></button>
+            <button class="btn-reset" onclick="resetFilters()">Reset <i class="fa-solid fa-rotate-right"></i></button>
+        </aside>
+
+        <section class="products-grid">
+            <h1 class="section-title">Our <span>Products</span></h1>
+            
+            <div class="product-card">
+                <div class="badge">VyperMods - Silent</div>
+                <div class="product-img">
+                    <img src="https://vypermods.mysellauth.com/storage/images/781490.webp" alt="Mod Preview">
+                </div>
+                <div class="product-info">
+                    <span class="price">$2.00 - $20.00</span>
+                    <span class="stock">3 In Stock</span>
+                    <button class="view-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">VyperMods - Supreme</div>
+                <div class="product-img">
+                    <img src="https://vypermods.mysellauth.com/storage/images/781490.webp" alt="Mod Preview">
+                </div>
+                <div class="product-info">
+                    <span class="price">$5.00 - $35.00</span>
+                    <span class="stock">5 In Stock</span>
+                    <button class="view-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">VyperMods - Basic</div>
+                <div class="product-img">
+                    <img src="https://vypermods.mysellauth.com/storage/images/781490.webp" alt="Mod Preview">
+                </div>
+                <div class="product-info">
+                    <span class="price">$1.00 - $10.00</span>
+                    <span class="stock">8 In Stock</span>
+                    <button class="view-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">VyperMods - ESP</div>
+                <div class="product-img">
+                    <img src="https://vypermods.mysellauth.com/storage/images/781490.webp" alt="Mod Preview">
+                </div>
+                <div class="product-info">
+                    <span class="price">$3.00 - $25.00</span>
+                    <span class="stock">4 In Stock</span>
+                    <button class="view-details">View Details <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

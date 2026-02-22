@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyper Mods | Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader Screen -->
+    <div id="loader-container" class="loader-hidden">
+        <div class="spinner"></div>
+    </div>
+    
+    <div id="particles-js"></div>
+
+    <header>
+        <nav class="glass-nav">
+            <div class="logo"> 
+                <img src="https://vypermods.mysellauth.com/storage/images/781477.webp" alt="Vyper Mods">
+                <span>Vyper Mods</span>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="products.html" onclick="verProductos(event)">Products</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="cart-pill">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="user-dropdown">
+                    <button class="user-btn">
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" onclick="showProfile()"><i class="fa-solid fa-user"></i> Mi Perfil</a>
+                        <a href="#" onclick="showOrders()"><i class="fa-solid fa-box"></i> Mis Pedidos</a>
+                        <a href="#" onclick="showFavorites()"><i class="fa-solid fa-heart"></i> Favoritos</a>
+                        <a href="#" onclick="toggleTheme()" id="themeToggle"><i class="fa-solid fa-sun"></i> Modo Claro</a>
+                        <a href="#" onclick="showSettings()"><i class="fa-solid fa-cog"></i> Configuración</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-content">
+            <p class="welcome">Welcome to</p>
+            <h1><span class="typewriter">Vyper Mods!</span></h1>
+            <div class="search-pill">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for products...">
+            </div>
+            <button class="btn-view">View Products <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+    </main>
+
+    <section class="products-container">
+        <div class="product-card">
+            <div class="product-title">VyperMods - Silent</div>
+            <div class="img-container">
+                <img src="https://vypermods.mysellauth.com/storage/images/781490.webp" alt="Silent Mod">
+            </div>
+            <div class="product-footer">
+                <div class="price-row">
+                    <span class="price">$2.00 - $20.00</span>
+                    <span class="stock">3 In Stock</span>
+                </div>
+                <a href="#" class="btn-details">View Details <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-simple">
+            <div class="footer-logo">
+                <img src="https://vypermods.mysellauth.com/storage/images/781477.webp" alt="Vyper Mods">
+                <span>Vyper Mods</span>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://wa.me/13464905996" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://discord.gg/vypermods" target="_blank">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a href="https://www.instagram.com/user_samuel7/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@monitoffx" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2026 Vyper Mods. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
